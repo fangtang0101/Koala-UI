@@ -4,7 +4,9 @@
       :noLeft="true"
       background="red"
       title="首页" />
-    <z-content></z-content>
+    <z-content>
+      <!-- default slot -->
+    </z-content>
   </div>
 </template>
 

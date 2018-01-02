@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-
+    <slot>ths for use this framework!!!</slot>
   </div>
 </template>
 
