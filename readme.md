@@ -1,2 +1,1 @@
-1. npm install
-2. npm start
+### 测试使用的 UI 框架，暂不建议使用
