@@ -5,7 +5,7 @@
       background="red"
       title="首页" />
     <z-content>
-      <!-- default slot -->
+      <z-list :items="[1,2,3,4]" />
     </z-content>
   </div>
 </template>
@@ -13,6 +13,7 @@
 <script>
 import zHeader from './components/header.vue'
 import zContent from './components/content.vue'
+import zList from './components/list.vue'
 
 export default {
   data() {
@@ -24,7 +25,8 @@ export default {
   },
   components: {
     zHeader,
-    zContent
+    zContent,
+    zList
   }
 }
 </script>
