@@ -1,11 +1,11 @@
 {
-  "name": "VueZ",
+  "name": "koala-ui",
   "version": "0.0.1",
   "description": "",
   "main": "npm.js",
   "scripts": {
     "start": "open ./test/index.html",
-    "prepublish": "cp test/src/components/npm.js ./; cp -r ./src/components/ ./src/"
+    "prepublish": "cp ./test/npm.js ./; cp -r ./test/src/components/ ./src/"
   },
   "keywords": ["VueZ", "Vue", "UI", "Framework"],
   "author": "zweizhao",
