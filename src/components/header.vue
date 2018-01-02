@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     backClick() {
-      alert("backClick")
+      this.$emit('backClick')
     }
   }
 };

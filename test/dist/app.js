@@ -577,7 +577,7 @@ exports.default = {
   },
   methods: {
     backClick: function backClick() {
-      alert("backClick");
+      this.$emit('backClick');
     }
   }
 }; //
