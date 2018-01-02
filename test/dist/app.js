@@ -11435,7 +11435,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-1b41da19] {\n  width: 100%;\n  height: calc(100% - 40px);\n  overflow-x: hidden;\n  overflow-y: scroll;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-1b41da19] {\n  width: 100%;\n  height: calc(100% - 40px);\n  padding: 0 8px;\n  box-sizing: border-box;\n  overflow-x: hidden;\n  overflow-y: scroll;\n}\n", ""]);
 
 // exports
 
