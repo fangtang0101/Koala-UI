@@ -14,6 +14,7 @@ export default {
 .content {
   width: 100%;
   height: e('calc(100% - 40px)');
+  box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
 }
