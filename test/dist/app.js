@@ -11532,7 +11532,6 @@ exports.default = {
   },
   methods: {
     itemClick: function itemClick(item) {
-      console.log(item);
       this.$emit('itemClick', item);
     }
   }

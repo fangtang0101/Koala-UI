@@ -24,7 +24,6 @@ export default {
   },
   methods: {
     itemClick(item) {
-      console.log(item)
       this.$emit('itemClick', item)
     }
   }
