@@ -1,5 +1,5 @@
 <template>
-  <div class="header" :style="{background: background}">
+  <div class="header" :style="{ background }">
     <icon-button
       v-if="!noLeft"
       class="left-button"
@@ -13,21 +13,26 @@
 </template>
 
 <script>
-import IconButton from './icon-button.vue'
+import IconButton from "./icon-button.vue";
 
 export default {
   components: {
     IconButton
   },
-  props: ["background", "tColor", "lText", "rText", "title", "noLeft"],
+  props: ["tColor", "lText", "rText", "title", "noLeft"],
+  data() {
+    return {
+      background: this.$headerBackground || 'red'
+    }
+  },
   computed: {
     defaultTextColor() {
-      return this.tColor || "white"
+      return this.tColor || "white";
     }
   },
   methods: {
     backClick() {
-      this.$emit('backClick')
+      this.$emit("backClick");
     }
   }
 };
