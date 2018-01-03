@@ -11939,7 +11939,15 @@ exports.default = {
     zHeader: _header2.default,
     zContent: _content2.default
   },
-  props: ['title', 'mainPage', 'background'],
+  props: {
+    title: String,
+    mainPage: Boolean,
+    background: {
+      type: String,
+      required: true,
+      default: 'red'
+    }
+  },
   data: function data() {
     return {};
   },
