@@ -7,7 +7,7 @@
     "start": "open ./test/index.html",
     "prepublish": "cp ./test/npm.js ./; cp -r ./test/src/components/ ./src/"
   },
-  "keywords": ["VueZ", "Vue", "UI", "Framework"],
+  "keywords": ["Koala", "Vue", "UI", "Framework"],
   "author": "zweizhao",
   "license": "MIT",
   "devDependencies": {
