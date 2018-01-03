@@ -2,7 +2,6 @@
   <div class="page">
     <z-header
       :noLeft="mainPage"
-      :background="background"
       :title="title"
       @backClick="backClick" />
     <z-content>
@@ -23,11 +22,6 @@ export default {
   props: {
     title: String,
     mainPage: Boolean,
-    background: {
-      type: String,
-      required: true,
-      default: 'red'
-    }
   },
   data() {
     return {
