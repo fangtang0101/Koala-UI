@@ -1,32 +1,32 @@
 <template>
   <div id="app">
-    <z-header
-      :noLeft="true"
-      background="red"
-      title="首页" />
-    <z-content>
-      <z-list :items="[1,2,3,4]" />
-    </z-content>
+    <z-page
+      :mainPage="true"
+      :background="'red'"
+      class="homepage"
+      title="首页">
+      <z-list
+        :items="items"
+        @itemClick="() => {}" />
+    </z-page>
   </div>
 </template>
 
 <script>
-import zHeader from './components/header.vue'
-import zContent from './components/content.vue'
 import zList from './components/list.vue'
+import zPage from './components/page.vue'
 
 export default {
   data() {
     return (
       {
-
+        items: [1, 2, 3]
       }
     )
   },
   components: {
-    zHeader,
-    zContent,
-    zList
+    zList,
+    zPage
   }
 }
 </script>
