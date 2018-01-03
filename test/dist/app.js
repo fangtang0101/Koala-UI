@@ -11590,7 +11590,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.page[data-v-0576cb1f] {\n  background: white;\n}\n", ""]);
+exports.push([module.i, "\n.page[data-v-0576cb1f] {\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: white;\n}\n", ""]);
 
 // exports
 
