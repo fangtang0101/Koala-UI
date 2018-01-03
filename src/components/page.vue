@@ -20,7 +20,15 @@ export default {
     zHeader,
     zContent
   },
-  props: ['title', 'mainPage', 'background'],
+  props: {
+    title: String,
+    mainPage: Boolean,
+    background: {
+      type: String,
+      required: true,
+      default: 'red'
+    }
+  },
   data() {
     return {
 
