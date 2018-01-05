@@ -1,10 +1,13 @@
 <template>
   <div class="page">
     <z-header
-      :noLeft="mainPage"
-      :title="title"
       :background="background"
-      @backClick="backClick" />
+      @backClick="backClick">
+      {{title}}
+    </z-header>
+    <z-button class="button">
+      button
+    </z-button>
     <z-content>
       <slot></slot>
     </z-content>
@@ -14,11 +17,13 @@
 <script>
 import zHeader from './header.vue'
 import zContent from './content.vue'
+import zButton from './button.vue'
 
 export default {
   components: {
     zHeader,
-    zContent
+    zContent,
+    zButton,
   },
   props: {
     title: String,
@@ -47,5 +52,11 @@ export default {
   width: 100%;
   height: 100%;
   background: white;
+
+  .button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+  }
 }
 </style>

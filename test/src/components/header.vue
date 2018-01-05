@@ -1,23 +1,23 @@
 <template>
   <div class="header" :style="{ background: showBackground }">
-    <icon-button
+    <back-button
       v-if="!noLeft"
       class="left-button"
-      :text="lText"
       :color="defaultTextColor"
       @click="backClick">
-    </icon-button>
-    <span :style="{color: defaultTextColor}">{{title}}</span>
+      lText
+    </back-button>
+    <span :style="{color: defaultTextColor}"><slot></slot></span>
     <button class="right-button" :style="{color: defaultTextColor}" v-if="rText">{{rText}}</button>
   </div>
 </template>
 
 <script>
-import IconButton from "./icon-button.vue";
+import BackButton from "./back-button.vue";
 
 export default {
   components: {
-    IconButton
+    BackButton
   },
   props: ["tColor", "lText", "rText", "title", "noLeft", 'background'],
   data() {

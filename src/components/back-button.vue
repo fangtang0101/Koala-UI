@@ -1,7 +1,7 @@
 <template>
   <button class="back" @click="$emit('click')">
     <slot name="left"><canvas ref="backCanvas" :width="backCanvasSize.width" :height="backCanvasSize.height" /></slot>
-    <span class="l-text" :style="{color: color}">{{text}}</span>
+    <span class="l-text" :style="{color: color}"><slot></slot></span>
     <slot name="right"></slot>
   </button>
 </template>
