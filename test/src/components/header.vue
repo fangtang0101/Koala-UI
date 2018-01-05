@@ -1,5 +1,5 @@
 <template>
-  <div class="header" :style="{ background }">
+  <div class="header" :style="{ background: showBackground }">
     <icon-button
       v-if="!noLeft"
       class="left-button"
@@ -19,16 +19,19 @@ export default {
   components: {
     IconButton
   },
-  props: ["tColor", "lText", "rText", "title", "noLeft"],
+  props: ["tColor", "lText", "rText", "title", "noLeft", 'background'],
   data() {
     return {
-      background: this.$headerBackground || 'red'
+
     }
   },
   computed: {
     defaultTextColor() {
       return this.tColor || "white";
-    }
+    },
+    showBackground() {
+      return this.background || this.$headerBackground || 'transparent'
+    },
   },
   methods: {
     backClick() {
@@ -45,7 +48,6 @@ export default {
   height: 40px;
   line-height: 40px;
   width: 100%;
-  background: transparent;
 
   button {
     position: absolute;

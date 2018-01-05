@@ -3,6 +3,7 @@
     <z-header
       :noLeft="mainPage"
       :title="title"
+      :background="background"
       @backClick="backClick" />
     <z-content>
       <slot></slot>
@@ -22,6 +23,7 @@ export default {
   props: {
     title: String,
     mainPage: Boolean,
+    background: String,
   },
   data() {
     return {

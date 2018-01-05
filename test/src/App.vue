@@ -2,6 +2,7 @@
   <div id="app">
     <z-page
       :mainPage="true"
+      background="red"
       class="homepage"
       title="首页">
       <z-list

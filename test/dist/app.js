@@ -534,6 +534,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 
 exports.default = {
   data: function data() {
@@ -685,6 +686,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 
 exports.default = {
   components: {
@@ -693,7 +695,8 @@ exports.default = {
   },
   props: {
     title: String,
-    mainPage: Boolean
+    mainPage: Boolean,
+    background: String
   },
   data: function data() {
     return {};
@@ -727,16 +730,17 @@ exports.default = {
   components: {
     IconButton: _iconButton2.default
   },
-  props: ["tColor", "lText", "rText", "title", "noLeft"],
+  props: ["tColor", "lText", "rText", "title", "noLeft", 'background'],
   data: function data() {
-    return {
-      background: this.$headerBackground || 'red'
-    };
+    return {};
   },
 
   computed: {
     defaultTextColor: function defaultTextColor() {
       return this.tColor || "white";
+    },
+    showBackground: function showBackground() {
+      return this.background || this.$headerBackground || 'transparent';
     }
   },
   methods: {
@@ -11688,7 +11692,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.header[data-v-29e8c3c6] {\n  position: relative;\n  text-align: center;\n  height: 40px;\n  line-height: 40px;\n  width: 100%;\n  background: transparent;\n}\n.header button[data-v-29e8c3c6] {\n  position: absolute;\n  height: 40px;\n  margin: 0;\n  padding: 0 10px;\n  background: transparent;\n}\n.header .left-button[data-v-29e8c3c6] {\n  left: 0;\n}\n.header .right-button[data-v-29e8c3c6] {\n  right: 0;\n}\n", ""]);
+exports.push([module.i, "\n.header[data-v-29e8c3c6] {\n  position: relative;\n  text-align: center;\n  height: 40px;\n  line-height: 40px;\n  width: 100%;\n}\n.header button[data-v-29e8c3c6] {\n  position: absolute;\n  height: 40px;\n  margin: 0;\n  padding: 0 10px;\n  background: transparent;\n}\n.header .left-button[data-v-29e8c3c6] {\n  left: 0;\n}\n.header .right-button[data-v-29e8c3c6] {\n  right: 0;\n}\n", ""]);
 
 // exports
 
@@ -11852,7 +11856,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "header", style: { background: _vm.background } },
+    { staticClass: "header", style: { background: _vm.showBackground } },
     [
       !_vm.noLeft
         ? _c("icon-button", {
@@ -12030,7 +12034,11 @@ var render = function() {
     { staticClass: "page" },
     [
       _c("z-header", {
-        attrs: { noLeft: _vm.mainPage, title: _vm.title },
+        attrs: {
+          noLeft: _vm.mainPage,
+          title: _vm.title,
+          background: _vm.background
+        },
         on: { backClick: _vm.backClick }
       }),
       _vm._v(" "),
@@ -12065,7 +12073,10 @@ var render = function() {
     [
       _c(
         "z-page",
-        { staticClass: "homepage", attrs: { mainPage: true, title: "首页" } },
+        {
+          staticClass: "homepage",
+          attrs: { mainPage: true, background: "red", title: "首页" }
+        },
         [
           _c("z-list", {
             attrs: { items: _vm.items },
