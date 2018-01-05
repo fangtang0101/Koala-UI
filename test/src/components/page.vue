@@ -5,9 +5,6 @@
       @backClick="backClick">
       {{title}}
     </z-header>
-    <z-button class="button">
-      button
-    </z-button>
     <z-content>
       <slot></slot>
     </z-content>

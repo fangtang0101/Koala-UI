@@ -1,7 +1,7 @@
 <template>
   <button class="button" @click="$emit('click')">
     <slot name="left"></slot>
-    <span class="text" :style="{color: color}"><slot></slot></span>
+    <span><slot></slot></span>
     <slot name="right"></slot>
   </button>
 </template>
@@ -30,7 +30,7 @@ export default {
   border-radius: 4px;
 
   .text {
-    color: white;
+
   }
 }
 </style>

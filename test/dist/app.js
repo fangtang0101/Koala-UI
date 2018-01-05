@@ -711,9 +711,6 @@ exports.default = {
 //
 //
 //
-//
-//
-//
 
 /***/ }),
 /* 8 */
@@ -12058,8 +12055,6 @@ var render = function() {
         [_vm._v("\n    " + _vm._s(_vm.title) + "\n  ")]
       ),
       _vm._v(" "),
-      _c("z-button", { staticClass: "button" }, [_vm._v("\n    button\n  ")]),
-      _vm._v(" "),
       _c("z-content", [_vm._t("default")], 2)
     ],
     1
@@ -12240,7 +12235,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.button[data-v-eae7ef7c] {\n  border: 0;\n  outline: none;\n  border-radius: 4px;\n}\n.button .text[data-v-eae7ef7c] {\n  color: white;\n}\n", ""]);
+exports.push([module.i, "\n.button[data-v-eae7ef7c] {\n  border: 0;\n  outline: none;\n  border-radius: 4px;\n}\n", ""]);
 
 // exports
 
@@ -12267,12 +12262,7 @@ var render = function() {
     [
       _vm._t("left"),
       _vm._v(" "),
-      _c(
-        "span",
-        { staticClass: "text", style: { color: _vm.color } },
-        [_vm._t("default")],
-        2
-      ),
+      _c("span", [_vm._t("default")], 2),
       _vm._v(" "),
       _vm._t("right")
     ],
