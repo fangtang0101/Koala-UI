@@ -711,6 +711,7 @@ exports.default = {
 //
 //
 //
+//
 
 /***/ }),
 /* 8 */
@@ -11597,7 +11598,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.page[data-v-0576cb1f] {\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: white;\n}\n.page .button[data-v-0576cb1f] {\n  width: 80px;\n  height: 40px;\n  border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.page[data-v-0576cb1f] {\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: white;\n}\n", ""]);
 
 // exports
 
@@ -12049,7 +12050,7 @@ var render = function() {
       _c(
         "z-header",
         {
-          attrs: { background: _vm.background },
+          attrs: { noLeft: _vm.mainPage, background: _vm.background },
           on: { backClick: _vm.backClick }
         },
         [_vm._v("\n    " + _vm._s(_vm.title) + "\n  ")]
